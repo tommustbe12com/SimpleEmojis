@@ -1,0 +1,34 @@
+name: SimpleEmojis
+version: '1.0'
+main: com.tommustbe12.simpleEmojis.SimpleEmojis
+api-version: '1.20'
+authors: [ TomMustBe12 ]
+website: https://tommustbe12.com/
+description: Simple, unicode-only emoji plugin that works server-side. No resource pack, only default unicode emojis.
+
+commands:
+  simpleemojis:
+    description: List all emojis or reload the SimpleEmojis plugin configuration.
+    permission: simpleemojis.admin
+    usage: /simpleemojis <list|reload>
+    aliases: [ se, semoji ]
+  addemoji:
+    description: Add emojis to the list.
+    permission: simpleemojis.add
+    usage: /addemoji <placeholder> <emoji>
+    aliases: [ ae, aemoji ]
+  removeemoji:
+    description: Remove an emoji by its placeholder.
+    permission: simpleemojis.remove
+    usage: /removeemoji <placeholder>
+    aliases: [ re, remoji ]
+permissions:
+  simpleemojis.admin:
+    description: Reload the plugin or show all emojis usable in chat.
+    default: op
+  simpleemojis.add:
+    description: Allow adding emojis via command.
+    default: op
+  simpleemojis.remove:
+    description: Allow removing emoji mappings.
+    default: op

@@ -1,0 +1,12 @@
+# SimpleEmojis - Configuration
+# Define your placeholder to emoji mappings here.
+# Use any key like :skull: or :heart: and assign a Unicode emoji.
+
+emojis:
+  ":skull:": "☠" # Here, the skull with crossbones looks better in-game in my opinion.
+  ":heart:": "❤"
+  ":smile:": "😄"
+  ":fire:": "🔥"
+
+# You can add more mappings using /addemoji or directly here.
+# If you add more mappings, remember to use /simpleemojis reload!
